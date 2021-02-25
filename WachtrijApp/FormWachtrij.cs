@@ -153,9 +153,14 @@ namespace WachtrijApp
         //  Een methode welke een status-code omzet naar een status-beschrijving
         private string ConvertStatus(string StatusNr)
         {
+            if (StatusNr == "0")
+            {
+                return "in-onderhoud";
+            }
+
             if (StatusNr == "1")
             {
-                return "uit/instappen";
+                return "in/uitstappen";
             }
 
             if (StatusNr == "2")
