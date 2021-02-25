@@ -184,12 +184,6 @@ namespace WachtrijApp
             return "";
         }
 
-        private void FormWachtrij_Load(object sender, EventArgs e)
-        {
-            timer1.Interval = 1000;
-            timer1.Start();
-        }
-
         private void labelTitel_Click(object sender, EventArgs e)
         {
             aantalKlikken += 1;
