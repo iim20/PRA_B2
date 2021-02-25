@@ -41,30 +41,30 @@
             // labelTitel
             // 
             this.labelTitel.AutoSize = true;
-            this.labelTitel.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitel.Location = new System.Drawing.Point(26, 18);
+            this.labelTitel.Font = new System.Drawing.Font("Snap ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitel.Location = new System.Drawing.Point(12, 18);
             this.labelTitel.Name = "labelTitel";
-            this.labelTitel.Size = new System.Drawing.Size(186, 32);
+            this.labelTitel.Size = new System.Drawing.Size(249, 35);
             this.labelTitel.TabIndex = 0;
             this.labelTitel.Text = "Bugs of Horror";
             // 
             // labelWachttijd
             // 
             this.labelWachttijd.AutoSize = true;
-            this.labelWachttijd.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWachttijd.Location = new System.Drawing.Point(27, 149);
+            this.labelWachttijd.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWachttijd.Location = new System.Drawing.Point(12, 147);
             this.labelWachttijd.Name = "labelWachttijd";
-            this.labelWachttijd.Size = new System.Drawing.Size(99, 25);
+            this.labelWachttijd.Size = new System.Drawing.Size(120, 25);
             this.labelWachttijd.TabIndex = 4;
             this.labelWachttijd.Text = "Wachttijd";
             // 
             // labelWachttijdMelding
             // 
             this.labelWachttijdMelding.AutoSize = true;
-            this.labelWachttijdMelding.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWachttijdMelding.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWachttijdMelding.Location = new System.Drawing.Point(29, 174);
             this.labelWachttijdMelding.Name = "labelWachttijdMelding";
-            this.labelWachttijdMelding.Size = new System.Drawing.Size(71, 18);
+            this.labelWachttijdMelding.Size = new System.Drawing.Size(83, 17);
             this.labelWachttijdMelding.TabIndex = 5;
             this.labelWachttijdMelding.Text = "0 minuten";
             // 
@@ -72,7 +72,7 @@
             // 
             this.AttractieLogo.ErrorImage = null;
             this.AttractieLogo.Image = ((System.Drawing.Image)(resources.GetObject("AttractieLogo.Image")));
-            this.AttractieLogo.Location = new System.Drawing.Point(132, 68);
+            this.AttractieLogo.Location = new System.Drawing.Point(162, 68);
             this.AttractieLogo.Name = "AttractieLogo";
             this.AttractieLogo.Size = new System.Drawing.Size(156, 181);
             this.AttractieLogo.TabIndex = 6;
@@ -82,20 +82,20 @@
             // labelKar2
             // 
             this.labelKar2.AutoSize = true;
-            this.labelKar2.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.labelKar2.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKar2.Location = new System.Drawing.Point(29, 87);
             this.labelKar2.Name = "labelKar2";
-            this.labelKar2.Size = new System.Drawing.Size(57, 18);
+            this.labelKar2.Size = new System.Drawing.Size(77, 17);
             this.labelKar2.TabIndex = 8;
             this.labelKar2.Text = "Kar 2: ...";
             // 
             // labelKar1
             // 
             this.labelKar1.AutoSize = true;
-            this.labelKar1.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.labelKar1.Font = new System.Drawing.Font("Snap ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKar1.Location = new System.Drawing.Point(29, 68);
             this.labelKar1.Name = "labelKar1";
-            this.labelKar1.Size = new System.Drawing.Size(57, 18);
+            this.labelKar1.Size = new System.Drawing.Size(73, 17);
             this.labelKar1.TabIndex = 9;
             this.labelKar1.Text = "Kar 1: ...";
             // 
@@ -104,7 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(298, 251);
+            this.ClientSize = new System.Drawing.Size(321, 275);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
             this.Controls.Add(this.AttractieLogo);
