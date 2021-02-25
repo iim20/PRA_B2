@@ -36,6 +36,7 @@
             this.labelKar2 = new System.Windows.Forms.Label();
             this.labelKar1 = new System.Windows.Forms.Label();
             this.labelKar3 = new System.Windows.Forms.Label();
+            this.btnStatusUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             // 
             this.AttractieLogo.ErrorImage = null;
             this.AttractieLogo.Image = ((System.Drawing.Image)(resources.GetObject("AttractieLogo.Image")));
-            this.AttractieLogo.Location = new System.Drawing.Point(210, 118);
+            this.AttractieLogo.Location = new System.Drawing.Point(206, 235);
             this.AttractieLogo.Name = "AttractieLogo";
             this.AttractieLogo.Size = new System.Drawing.Size(135, 139);
             this.AttractieLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,12 +112,24 @@
             this.labelKar3.TabIndex = 10;
             this.labelKar3.Text = "Kar 3: ...";
             // 
+            // btnStatusUpdate
+            // 
+            this.btnStatusUpdate.Font = new System.Drawing.Font("Snap ITC", 9.75F);
+            this.btnStatusUpdate.Location = new System.Drawing.Point(17, 248);
+            this.btnStatusUpdate.Name = "btnStatusUpdate";
+            this.btnStatusUpdate.Size = new System.Drawing.Size(164, 30);
+            this.btnStatusUpdate.TabIndex = 11;
+            this.btnStatusUpdate.Text = "Update Status";
+            this.btnStatusUpdate.UseVisualStyleBackColor = true;
+            this.btnStatusUpdate.Click += new System.EventHandler(this.btnStatusUpdate_Click);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lime;
-            this.ClientSize = new System.Drawing.Size(348, 267);
+            this.ClientSize = new System.Drawing.Size(353, 386);
+            this.Controls.Add(this.btnStatusUpdate);
             this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
@@ -142,6 +155,7 @@
         private System.Windows.Forms.Label labelKar2;
         private System.Windows.Forms.Label labelKar1;
         private System.Windows.Forms.Label labelKar3;
+        private System.Windows.Forms.Button btnStatusUpdate;
     }
 }
 

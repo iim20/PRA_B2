@@ -148,6 +148,8 @@ namespace WachtrijApp
             string node3 = doc.DocumentElement.SelectSingleNode("/Status/Kar03").InnerText;
             string status3 = ConvertStatus(node3);
             this.labelKar3.Text = $"Kar 3: {status3}";
+
+            doc.Save("SensorData\\AttractieStatus.xml");
         }
 
         //  Een methode welke een status-code omzet naar een status-beschrijving
@@ -179,6 +181,11 @@ namespace WachtrijApp
             }
 
             return "";
+        }
+
+        private void btnStatusUpdate_Click(object sender, EventArgs e)
+        {
+            VerwerkAttractieStatusData();
         }
     }
 }
