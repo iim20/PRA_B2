@@ -149,7 +149,6 @@ namespace WachtrijApp
             string status3 = ConvertStatus(node3);
             this.labelKar3.Text = $"Kar 3: {status3}";
 
-            doc.Save("SensorData\\AttractieStatus.xml");
         }
 
         //  Een methode welke een status-code omzet naar een status-beschrijving
