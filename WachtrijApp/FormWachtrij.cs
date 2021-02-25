@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Xml;
+using System.Drawing;
 
 namespace WachtrijApp
 {
     public partial class FormWachtrij : Form
     {
+        int aantalKlikken = 0;
         public FormWachtrij()
         {
             InitializeComponent();
@@ -181,6 +183,28 @@ namespace WachtrijApp
 
             return "";
         }
+
+        private void FormWachtrij_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000;
+            timer1.Start();
+        }
+
+        private void labelTitel_Click(object sender, EventArgs e)
+        {
+            aantalKlikken += 1;
+            if (aantalKlikken == 3)
+            {
+                aantalKlikken = 0;
+                Random rn = new Random();
+                int R, G, B;
+                R = rn.Next(0, 255);
+                B = rn.Next(0, 255);
+                G = rn.Next(0, 255);
+
+                labelTitel.ForeColor = Color.FromArgb(R, G, B);
+            }
+        }    
 
         private void btnStatusUpdate_Click(object sender, EventArgs e)
         {
