@@ -37,7 +37,8 @@
             this.labelKar2 = new System.Windows.Forms.Label();
             this.labelKar1 = new System.Windows.Forms.Label();
             this.labelKar3 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnStatusUpdate = new System.Windows.Forms.Button();
+            this.tmrUpdateStatus = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,12 +122,30 @@
             this.labelKar3.TabIndex = 10;
             this.labelKar3.Text = "Kar 3: ...";
             // 
+            // btnStatusUpdate
+            // 
+            this.btnStatusUpdate.Font = new System.Drawing.Font("Snap ITC", 9.75F);
+            this.btnStatusUpdate.Location = new System.Drawing.Point(17, 248);
+            this.btnStatusUpdate.Name = "btnStatusUpdate";
+            this.btnStatusUpdate.Size = new System.Drawing.Size(164, 30);
+            this.btnStatusUpdate.TabIndex = 11;
+            this.btnStatusUpdate.Text = "Update Status";
+            this.btnStatusUpdate.UseVisualStyleBackColor = true;
+            this.btnStatusUpdate.Click += new System.EventHandler(this.btnStatusUpdate_Click);
+            // 
+            // tmrUpdateStatus
+            // 
+            this.tmrUpdateStatus.Enabled = true;
+            this.tmrUpdateStatus.Interval = 10000;
+            this.tmrUpdateStatus.Tick += new System.EventHandler(this.tmrUpdateStatus_Tick);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(928, 637);
+            this.Controls.Add(this.btnStatusUpdate);
             this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
             this.Controls.Add(this.labelKar2);
@@ -154,7 +173,9 @@
         private System.Windows.Forms.Label labelKar2;
         private System.Windows.Forms.Label labelKar1;
         private System.Windows.Forms.Label labelKar3;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnStatusUpdate;
+        private System.Windows.Forms.Timer tmrUpdateStatus;
+
     }
 }
 
