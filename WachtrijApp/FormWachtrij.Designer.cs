@@ -73,9 +73,10 @@
             // 
             this.AttractieLogo.ErrorImage = null;
             this.AttractieLogo.Image = ((System.Drawing.Image)(resources.GetObject("AttractieLogo.Image")));
-            this.AttractieLogo.Location = new System.Drawing.Point(162, 68);
+            this.AttractieLogo.Location = new System.Drawing.Point(210, 118);
             this.AttractieLogo.Name = "AttractieLogo";
-            this.AttractieLogo.Size = new System.Drawing.Size(156, 181);
+            this.AttractieLogo.Size = new System.Drawing.Size(135, 139);
+            this.AttractieLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AttractieLogo.TabIndex = 6;
             this.AttractieLogo.TabStop = false;
             this.AttractieLogo.Click += new System.EventHandler(this.AttractieLogo_Click);
