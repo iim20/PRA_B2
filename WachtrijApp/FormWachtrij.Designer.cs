@@ -39,6 +39,7 @@
             this.labelKar3 = new System.Windows.Forms.Label();
             this.btnStatusUpdate = new System.Windows.Forms.Button();
             this.tmrUpdateStatus = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,7 +126,7 @@
             // btnStatusUpdate
             // 
             this.btnStatusUpdate.Font = new System.Drawing.Font("Snap ITC", 9.75F);
-            this.btnStatusUpdate.Location = new System.Drawing.Point(17, 248);
+            this.btnStatusUpdate.Location = new System.Drawing.Point(407, 162);
             this.btnStatusUpdate.Name = "btnStatusUpdate";
             this.btnStatusUpdate.Size = new System.Drawing.Size(164, 30);
             this.btnStatusUpdate.TabIndex = 11;
@@ -175,7 +176,7 @@
         private System.Windows.Forms.Label labelKar3;
         private System.Windows.Forms.Button btnStatusUpdate;
         private System.Windows.Forms.Timer tmrUpdateStatus;
-
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
