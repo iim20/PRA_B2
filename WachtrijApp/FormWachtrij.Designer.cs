@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWachtrij));
             this.labelTitel = new System.Windows.Forms.Label();
             this.labelWachttijd = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.labelKar1 = new System.Windows.Forms.Label();
             this.labelKar3 = new System.Windows.Forms.Label();
             this.btnStatusUpdate = new System.Windows.Forms.Button();
+            this.tmrUpdateStatus = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,6 +125,12 @@
             this.btnStatusUpdate.UseVisualStyleBackColor = true;
             this.btnStatusUpdate.Click += new System.EventHandler(this.btnStatusUpdate_Click);
             // 
+            // tmrUpdateStatus
+            // 
+            this.tmrUpdateStatus.Enabled = true;
+            this.tmrUpdateStatus.Interval = 10000;
+            this.tmrUpdateStatus.Tick += new System.EventHandler(this.tmrUpdateStatus_Tick);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,6 +164,7 @@
         private System.Windows.Forms.Label labelKar1;
         private System.Windows.Forms.Label labelKar3;
         private System.Windows.Forms.Button btnStatusUpdate;
+        private System.Windows.Forms.Timer tmrUpdateStatus;
     }
 }
 

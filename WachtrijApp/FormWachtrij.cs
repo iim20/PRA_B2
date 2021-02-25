@@ -186,5 +186,11 @@ namespace WachtrijApp
         {
             VerwerkAttractieStatusData();
         }
+
+        private void tmrUpdateStatus_Tick(object sender, EventArgs e)
+        {
+            VerwerkAttractieStatusData();
+        }
+
     }
 }
