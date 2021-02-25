@@ -151,7 +151,7 @@ namespace WachtrijApp
         {
             if (StatusNr == "0")
             {
-                return "in onderhoud";
+                return "in-onderhoud";
             }
 
             if (StatusNr == "1")
