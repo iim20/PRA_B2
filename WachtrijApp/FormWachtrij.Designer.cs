@@ -39,6 +39,7 @@
             this.labelKar3 = new System.Windows.Forms.Label();
             this.btnStatusUpdate = new System.Windows.Forms.Button();
             this.tmrUpdateStatus = new System.Windows.Forms.Timer(this.components);
+            this.btnResetStatus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AttractieLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,12 +132,24 @@
             this.tmrUpdateStatus.Interval = 10000;
             this.tmrUpdateStatus.Tick += new System.EventHandler(this.tmrUpdateStatus_Tick);
             // 
+            // btnResetStatus
+            // 
+            this.btnResetStatus.Font = new System.Drawing.Font("Snap ITC", 9.75F);
+            this.btnResetStatus.Location = new System.Drawing.Point(17, 294);
+            this.btnResetStatus.Name = "btnResetStatus";
+            this.btnResetStatus.Size = new System.Drawing.Size(164, 29);
+            this.btnResetStatus.TabIndex = 12;
+            this.btnResetStatus.Text = "Reset Status";
+            this.btnResetStatus.UseVisualStyleBackColor = true;
+            this.btnResetStatus.Click += new System.EventHandler(this.btnResetStatus_Click);
+            // 
             // FormWachtrij
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(353, 386);
+            this.Controls.Add(this.btnResetStatus);
             this.Controls.Add(this.btnStatusUpdate);
             this.Controls.Add(this.labelKar3);
             this.Controls.Add(this.labelKar1);
@@ -165,6 +178,7 @@
         private System.Windows.Forms.Label labelKar3;
         private System.Windows.Forms.Button btnStatusUpdate;
         private System.Windows.Forms.Timer tmrUpdateStatus;
+        private System.Windows.Forms.Button btnResetStatus;
     }
 }
 

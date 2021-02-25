@@ -192,5 +192,23 @@ namespace WachtrijApp
             VerwerkAttractieStatusData();
         }
 
+        private void btnResetStatus_Click(object sender, EventArgs e)
+        {
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load("SensorData\\AttractieStatus.xml");
+
+            foreach (XmlNode node in doc)
+            {
+                foreach (XmlNode childNode in node.ChildNodes)
+                {
+                    childNode.InnerText = "0";
+                }
+
+            }
+
+            doc.Save("SensorData\\AttractieStatus.xml");
+            VerwerkAttractieStatusData();
+        }
     }
 }
